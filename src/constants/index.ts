@@ -1,38 +1,18 @@
 import familycircle from "../assets//familycircle.png";
 import moviecircle from "../assets//moviecircle.png";
 import multitenant from "../assets//multitenant.png";
-export const DESCRIPTION_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+import porfolio from "../assets//portfolio.png";
+export const DESCRIPTION_CONTENT = `Hello, my full name is Tran Minh Gia Khanh. I am a passionate front-end developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like ReactJS and NextJS, as well as some libraries like TanStack Query, Redux, Ant Design, React router dom, and so on. Moreover, I also have knowledge of Firebase and webSocket. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile front-end developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including ReactJS, NextJS, FireBase, and WebSocket. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "06/2023 - 09/2023",
+    role: "Frontend Developer Intern",
+    company: "TMA Solutions",
+    description: `Designed and developed user interfaces for library management web applications using React and Firebase for backend and handle data. Implemented responsive designs and optimized frontend performance.`,
+    technologies: ["Javascript", "React.js", "Firbase", "AntDesign"],
   },
 ];
 
@@ -41,29 +21,44 @@ export const PROJECTS = [
     title: "Familycircle Website",
     image: familycircle,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A fully functional social website with features like post, comment, realtime chat, follow, bookmark, push notifications, user authentication and so on. Besides, it also has a course feature that allows users can follow and learn from the online course, and a evaluate health for mother and baby features. Moreover, it also has a admin page that allows admin can manage users, courses, posts, comments, and so on.",
+    technologies: [
+      "JavaScript",
+      "React",
+      "TanStack Query",
+      "AntDesign",
+      "Firebase",
+      "WebSocket",
+    ],
+    github: "https://github.com/KhanhTran297/FamilyCircle",
+    deploy: "https://familycircle.vercel.app/",
   },
   {
     title: "Moviecircle Website",
     image: moviecircle,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "An web application that allows users can search for movies, view movie details, watch trailers, and rate movies like netflix or phimmoi.",
+    technologies: ["TypeScript", "NextJS", "TanStack Query"],
+    github: "https://github.com/KhanhTran297/Movie-Web",
+    deploy: "https://moviecircle.vercel.app/",
   },
-  //   {
-  //     title: "Portfolio Website",
-  //     image: project3,
-  //     description:
-  //       "A personal portfolio website showcasing projects, skills, and contact information.",
-  //     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  //   },
+  {
+    title: "Portfolio Website",
+    image: porfolio,
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["Typescript", "React", "Framer Motion"],
+    github: "https://github.com/KhanhTran297/portfolio",
+    deploy: "https://portfolio-teal-alpha-10.vercel.app/",
+  },
   {
     title: "Multi-tenant",
     image: multitenant,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Building multi-tenant platform allows businesses to manage and customize individual environments for each customer, optimizing efficiency and security. Grow with scalable capabilities and easily integrate into your system.",
+    technologies: ["TypeScript", "NextJS", "AntDesign", "TanStack Query"],
+    github: "https://github.com/KhanhTran297/multi_tenant",
+    deploy: "https://multi-tenant-ten.vercel.app/",
   },
 ];
 

@@ -2,7 +2,10 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiFirebaseLine } from "react-icons/ri";
 import { SiSocketdotio } from "react-icons/si";
 import { SiAntdesign } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
+import { RiTailwindCssFill } from "react-icons/ri";
 // const iconVariants = (duration: number) => ({
 //   initial: { y: -10 },
 //   animate: {
@@ -32,6 +35,51 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
+        <motion.div
+          initial={{ y: -10 }}
+          animate={{
+            y: [10, -10],
+            transition: {
+              duration: 2.5,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <IoLogoJavascript className="text-yellow-400 text-7xl" />
+        </motion.div>
+        <motion.div
+          initial={{ y: -10 }}
+          animate={{
+            y: [10, -10],
+            transition: {
+              duration: 1,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiTypescript className="text-cyan-400 text-7xl" />
+        </motion.div>
+        <motion.div
+          initial={{ y: -10 }}
+          animate={{
+            y: [10, -10],
+            transition: {
+              duration: 3,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <RiTailwindCssFill className="text-cyan-400 text-7xl" />
+        </motion.div>
         <motion.div
           initial={{ y: -10 }}
           animate={{

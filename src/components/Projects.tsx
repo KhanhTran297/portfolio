@@ -1,4 +1,5 @@
 import { PROJECTS } from "../constants";
+import { FaGithub, FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
@@ -12,7 +13,10 @@ const Projects = () => {
         Projects
       </motion.h2>
       {PROJECTS.map((project, index) => (
-        <div className="flex flex-wrap mb-8 lg:justify-center" key={index}>
+        <div
+          className="flex flex-wrap gap-6 mb-8 lg:justify-center"
+          key={index}
+        >
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
@@ -22,15 +26,27 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.title}
-              width={300}
-              height={300}
-              className="mb-6 rounded "
+              // width={300}
+              // height={300}
+              className="w-full h-full rounded"
             />
             {/* <div
               className={`bg-[url(${project.image})] w-[300px] h-[300px]`}
             ></div> */}
 
-            {/* <div className="absolute top-0  w-[300px] h-[300px] mb-6  rounded bg-transparent bg-red-300 "></div> */}
+            <motion.div
+              className="absolute flex flex-row items-center justify-center w-full h-full gap-8 rounded cursor-pointer bg-slate-400 "
+              whileHover={{ opacity: 0.75, y: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              transition={{ duration: 0.25 }}
+            >
+              <a href={project.github}>
+                <FaGithub className="text-3xl text-white cursor-pointer hover:text-purple-800" />
+              </a>
+              <a href={project.deploy}>
+                <FaEye className="text-3xl text-white cursor-pointer hover:text-purple-800" />
+              </a>
+            </motion.div>
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
