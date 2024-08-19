@@ -37,7 +37,7 @@ const Projects = () => {
             <motion.div
               className="absolute flex flex-row items-center justify-center w-full h-full gap-8 rounded cursor-pointer bg-slate-400 "
               whileHover={{ opacity: 0.75, y: 0 }}
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 0 }}
               transition={{ duration: 0.25 }}
             >
               <a href={project.github}>
