@@ -1,7 +1,9 @@
 import { PROJECTS } from "../constants";
 import { FaGithub, FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const Projects = () => {
+  const navigate = useNavigate();
   return (
     <div className="pb-4 border-b border-neutral-900">
       <motion.h2
@@ -24,7 +26,7 @@ const Projects = () => {
             className="relative flex items-center justify-center w-full lg:w-1/4"
           >
             <img
-              src={project.image}
+              src={project.image[0]}
               alt={project.title}
               // width={300}
               // height={300}
@@ -43,9 +45,9 @@ const Projects = () => {
               <a href={project.github}>
                 <FaGithub className="text-3xl text-white cursor-pointer hover:text-purple-800" />
               </a>
-              <a href={project.deploy}>
+              <div onClick={() => navigate(`/project/${project.id}`)}>
                 <FaEye className="text-3xl text-white cursor-pointer hover:text-purple-800" />
-              </a>
+              </div>
             </motion.div>
           </motion.div>
           <motion.div
@@ -56,14 +58,14 @@ const Projects = () => {
           >
             <h6 className="mb-2 font-semibold ">{project.title}</h6>
             <p className="mb-4 text-neutral-400">{project.description}</p>
-            {project.technologies.map((tech, index) => (
+            {/* {project.technologies.map((tech, index) => (
               <span
                 key={index}
                 className="px-2 py-1 mr-2 text-sm font-medium text-purple-900 rounded bg-neutral-900"
               >
                 {tech}
               </span>
-            ))}
+            ))} */}
           </motion.div>
         </div>
       ))}

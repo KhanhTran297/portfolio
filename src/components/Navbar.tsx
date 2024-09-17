@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="flex items-center justify-between py-6 mb-20 ">
       <div className="flex items-center flex-shrink-0">
-        <img src={logo} alt="" className="w-10 h-10 mx-2 rounded-full " />
+        <img
+          src={logo}
+          alt=""
+          className="w-10 h-10 mx-2 rounded-full cursor-pointer "
+          onClick={() => navigate("/")}
+        />
       </div>
       <div className="flex justify-center gap-4 m-8 text-2xl intems-center">
         <a href="https://www.linkedin.com/in/khanhtran297/">
